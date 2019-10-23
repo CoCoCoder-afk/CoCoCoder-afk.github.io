@@ -7,10 +7,18 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
 </head>
 <body>
-	<div class = 'outside'>	</div>
-	<header>
+	<!-- Put this script tag to the <head> of your page -->
+<script type="text/javascript" src="https://vk.com/js/api/openapi.js?162"></script>
 
-	</header>
+<script type="text/javascript">
+  VK.init({apiId: API_ID, onlyWidgets: true});
+</script>
+
+<!-- Put this div tag to the place, where the Comments block will be -->
+<div id="vk_comments"></div>
+<script type="text/javascript">
+VK.Widgets.Comments("vk_comments", {limit: 20, attach: "*"});
+</script>
 	<h2 align = 'center'><u><a href = 'html/RFindex.html'>Статистика по РФ в целом</a></u></h2>
 	<p align = 'center' id = 'output'>Наведите курсор на карту</p>
 	<script src = 'script.js' defer></script>
